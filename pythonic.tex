@@ -63,13 +63,22 @@
     \pause
     \medskip
 
+%    \begin{block}{Setting The Default}
+%        \small
+%        Debian/Ubuntu systems have Python 2 as the default, to switch this to
+%        Python 3, run this command:
+%
+%        \texttt{\# update-alternatives --install /usr/bin/python \textbackslash \\
+%        \phantom{\#} python /usr/bin/python3 2}
+%    \end{block}
+
     \begin{block}{Setting The Default}
         \small
-        Debian/Ubuntu systems have Python 2 as the default, to switch this to
-        Python 3, run this command:
+        Some systems have Python 2 as the default, the general solution is to
+        alias \texttt{python} to \texttt{python3}. Add this to your shell's
+        \emph{rc file}.
 
-        \texttt{\# update-alternatives --install /usr/bin/python \textbackslash \\
-        \phantom{\#} python /usr/bin/python3 2}
+        \texttt{alias python=python3}
     \end{block}
 \end{frame}
 
